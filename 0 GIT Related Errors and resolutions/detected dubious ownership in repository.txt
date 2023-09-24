@@ -1,0 +1,18 @@
+If you face this kind of error ::::
+
+fatal: detected dubious ownership in repository at 'D:/Personal GIT/JavaScript'
+'D:/Personal GIT/JavaScript' is owned by:
+        'S-1-5-21-3484502017-658289855-2373831590-1001'
+but the current user is:
+        'S-1-5-21-1427035005-2301522528-3374088358-1001'
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory 'D:/Personal GIT/JavaScript'
+
+
+
+then you can use this command in cmd :::: 
+git config --global --add safe.directory "*"
+
+Followed this URL ::: 
+https://stackoverflow.com/questions/72978485/git-submodule-update-failed-with-fatal-detected-dubious-ownership-in-repositor
