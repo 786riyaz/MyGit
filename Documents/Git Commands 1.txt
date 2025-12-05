@@ -1,0 +1,365 @@
+Here is a clean **text-file–style summary** of your Git commands PDF, with **proper explanations and clear examples** for each command — exactly as you requested.
+
+---
+
+# **GIT COMMANDS – SUMMARY WITH EXAMPLES (TEXT FILE FORMAT)**
+
+## **1. SETUP (User Configuration)**
+
+Used to configure identity on your system.
+
+### **git config --global user.name "Your Name"**
+
+Sets your global username (used in commits).
+**Example:**
+
+```
+git config --global user.name "Riyaz Khan"
+```
+
+### **git config --global user.email "your@email.com"**
+
+Sets your global email address.
+**Example:**
+
+```
+git config --global user.email "riyaz@example.com"
+```
+
+### **git config --global color.ui auto**
+
+Enables colored output for better readability.
+**Example:**
+
+```
+git config --global color.ui auto
+```
+
+---
+
+## **2. SETUP & INIT**
+
+### **git init**
+
+Creates a new Git repository in the current folder.
+**Example:**
+
+```
+cd my-project
+git init
+```
+
+### **git clone <url>**
+
+Copies a remote repository into your local system.
+**Example:**
+
+```
+git clone https://github.com/user/project.git
+```
+
+---
+
+# **3. STAGE & SNAPSHOT (Working with Files)**
+
+### **git status**
+
+Shows the current status of files (modified, staged, untracked).
+**Example:**
+
+```
+git status
+```
+
+### **git add <file>**
+
+Stages a file for commit.
+**Example:**
+
+```
+git add index.html
+```
+
+### **git add .**
+
+Stages **all** modified/created files.
+**Example:**
+
+```
+git add .
+```
+
+### **git reset <file>**
+
+Unstages a file without removing changes.
+**Example:**
+
+```
+git reset index.html
+```
+
+### **git diff**
+
+Shows changes not yet staged.
+**Example:**
+
+```
+git diff
+```
+
+### **git diff --staged**
+
+Shows changes that are staged but not committed.
+**Example:**
+
+```
+git diff --staged
+```
+
+### **git commit -m "message"**
+
+Creates a commit with the staged changes.
+**Example:**
+
+```
+git commit -m "Added login page UI"
+```
+
+---
+
+# **4. BRANCH & MERGE**
+
+### **git branch**
+
+Shows all branches; `*` indicates the current branch.
+**Example:**
+
+```
+git branch
+```
+
+### **git branch new-feature**
+
+Creates a new branch.
+**Example:**
+
+```
+git branch payment-module
+```
+
+### **git checkout <branch>**
+
+Switches to another branch.
+**Example:**
+
+```
+git checkout payment-module
+```
+
+### **git merge <branch>**
+
+Merges another branch into the current branch.
+**Example:**
+
+```
+git merge payment-module
+```
+
+### **git log**
+
+Shows commit history.
+**Example:**
+
+```
+git log
+```
+
+---
+
+# **5. SHARE & UPDATE (Working with Remote Repos)**
+
+### **git remote add origin <url>**
+
+Adds a remote repository.
+**Example:**
+
+```
+git remote add origin https://github.com/riyaz/my-app.git
+```
+
+### **git fetch origin**
+
+Downloads latest branches/commits from remote, but does not merge.
+**Example:**
+
+```
+git fetch origin
+```
+
+### **git merge origin/main**
+
+Merges remote changes into current branch.
+**Example:**
+
+```
+git merge origin/main
+```
+
+### **git push origin main**
+
+Uploads local commits to remote repository.
+**Example:**
+
+```
+git push origin main
+```
+
+### **git pull**
+
+Fetch + merge remote branch into your current branch.
+**Example:**
+
+```
+git pull
+```
+
+---
+
+# **6. TRACKING PATH CHANGES**
+
+### **git rm <file>**
+
+Deletes a file and stages the removal.
+**Example:**
+
+```
+git rm test.txt
+```
+
+### **git mv old-path new-path**
+
+Renames or moves a file.
+**Example:**
+
+```
+git mv old.txt new.txt
+```
+
+---
+
+# **7. TEMPORARY COMMITS (Stash)**
+
+### **git stash**
+
+Temporarily saves changes without committing.
+**Example:**
+
+```
+git stash
+```
+
+### **git stash list**
+
+Shows list of saved stashes.
+**Example:**
+
+```
+git stash list
+```
+
+### **git stash pop**
+
+Restores stashed changes and removes them from stash list.
+**Example:**
+
+```
+git stash pop
+```
+
+### **git stash drop**
+
+Deletes the most recent stash.
+**Example:**
+
+```
+git stash drop
+```
+
+---
+
+# **8. REWRITE HISTORY**
+
+### **git rebase <branch>**
+
+Moves/rewrites commits on top of another branch.
+**Example:**
+
+```
+git rebase main
+```
+
+### **git reset --hard <commit>**
+
+Resets the current branch to a specific commit and removes local changes.
+**Example:**
+
+```
+git reset --hard a1b2c3d
+```
+
+---
+
+# **9. INSPECT & COMPARE**
+
+### **git log branchB..branchA**
+
+Shows commits in *branchA* that are not in *branchB*.
+**Example:**
+
+```
+git log dev..main
+```
+
+### **git log --follow <file>**
+
+Shows commit history of a file (even after renames).
+**Example:**
+
+```
+git log --follow index.html
+```
+
+### **git diff branchB...branchA**
+
+Shows difference between two branches.
+**Example:**
+
+```
+git diff dev...main
+```
+
+### **git show <commit/SHA>**
+
+Shows details of a commit.
+**Example:**
+
+```
+git show 9971abcd
+```
+
+---
+
+# **10. IGNORING FILES**
+
+### Create `.gitignore` file
+
+Add file/folder patterns you want Git to ignore.
+
+**Example `.gitignore`:**
+
+```
+node_modules/
+.env
+logs/
+*.log
+```
