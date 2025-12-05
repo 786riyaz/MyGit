@@ -1,0 +1,13 @@
+Complete git and Github course in Hindi
+https://www.youtube.com/watch?v=q8EevlEpQ2A
+
+00:00 - Git intro
+04:50 - Git basics
+23:02 - Git Terminologies
+55:16 - Git behind the scene
+01:12:10 - Git branches and conflicts
+01:46:09 - Git diff, stash and tag
+02:02:24 - Git rebase and reflog
+02:24:05 - Pushing code to GitHub
+02:42:49 - Open source contribution
+

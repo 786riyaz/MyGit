@@ -1,0 +1,31 @@
+Git and GitHUB For Beginners In One Video 2025 🔥 [HINDI] | MPrashant
+https://www.youtube.com/watch?v=uwyP5SNlQAU&t=1390s
+
+Timestamps:
+00:00 Introduction to Course
+01:12 What is Git?
+01:26 What is VCS?
+04:31 Features of GIT - VCS
+06:52 Git Installation On Windows
+08:38 Git Installation On MAC
+10:15 Git Installation on Linux
+11:26 Git Configuration
+14:46 Create Local GIT Repo
+17:14 Git Commit
+28:16 Git Show
+30:40 Git Checkout
+34:09 Git Restore
+40:51 Git Reset
+43:34 Different Git Logs Options
+52:19 Remote Repo
+54:16 GitHub Setup
+59:43 Git PUSH
+01:01:34 Understand Git PULL
+01:06:22 Git Clone
+01:12:17 Git Branching and Merging
+01:25:04 Git is Merge Conflict
+01:29:29 Git Forking and Pull Request
+01:39:16 GitIgnore
+01:44:42 Git Clean
+01:46:08 What are Git Tags?
+01:55:13 Host Website on GitHUB

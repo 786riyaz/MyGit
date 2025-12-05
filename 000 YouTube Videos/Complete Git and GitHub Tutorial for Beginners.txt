@@ -1,0 +1,20 @@
+Complete Git and GitHub Tutorial for Beginners
+https://www.youtube.com/watch?v=RDxQEzXN8AU
+
+Timeline
+00:00 Introduction
+00:45 Tutorial Outline
+02:00 What is VCS?
+06:45 Getting Started with Git VCS
+08:35 Git CLI Setup
+12:40 Creating Git Repository
+17:45 Tracking Files with Git
+22:16 Commit Changes and Commit History in Git
+38:40 Reverting Commits in Git
+48:20 Home Assignment
+50:45 Collaboration with Github and Git
+01:00:20 Introduction to GitHub
+01:19:00 Introduction to Git Branching
+01:41:15 Branch Merge vs Rebasing
+01:50:15 Git Stashing
+01:51:00 Outro

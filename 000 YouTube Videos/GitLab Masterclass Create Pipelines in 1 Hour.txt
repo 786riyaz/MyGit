@@ -1,0 +1,20 @@
+GitLab Masterclass: Create Pipelines in 1 Hour! 🔥 [HINDI]
+https://www.youtube.com/watch?v=Ip2TA2ijDmA
+
+
+00:00 INTRO of Course
+01:05 What is GitLab and CICD
+04:13 GitLab Setup
+11:49 Creating First GitLab Pipeline
+16:34 GitLab Runner
+18:57 Multiple Jobs
+31:01 Run Bash Script Using GitLab
+36:16 GitLab Artifacts
+43:05 Environment Variables in GitLab
+45:52 Email Notification
+47:32 Schedule Job using Cron Gitlab
+51:08 Manual Deployment
+52:23 Pre-Defined Variables
+54:35 Importing GitHub project
+58:35 Run Job using Custom Image
+01:00:07 Gitlab Pages - Static Website Deployment Project
