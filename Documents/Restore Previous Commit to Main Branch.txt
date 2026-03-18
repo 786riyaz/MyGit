@@ -1,0 +1,175 @@
+# Git Guide – Restore Previous Commit to Main Branch
+
+## Scenario
+
+You made multiple commits:
+
+Commit History Example
+
+Commit 2 → Latest changes (Wrong changes)  
+Commit 1 → Correct version you want to restore
+
+You want the **main branch to go back to Commit 1** and remove Commit 2.
+
+---
+
+# Step 1 — Check Commit History
+
+View the commit history to find the commit hash.
+
+```bash
+git log --oneline
+```
+
+Example output:
+
+```
+8ab32cd Commit 2 - Wrong changes
+ca449fe Commit 1 - Correct version
+```
+
+Copy the **commit hash of the correct commit**.
+
+Example:
+
+```
+ca449fe
+```
+
+---
+
+# Step 2 — Reset Branch to Previous Commit
+
+Move the branch back to the desired commit.
+
+```bash
+git reset --hard <commit-hash>
+```
+
+Example:
+
+```bash
+git reset --hard ca449fe
+```
+
+Result:
+- Local files revert to that commit
+- Later commits are removed locally
+
+---
+
+# Step 3 — Push the Reset to Remote Repository
+
+If the incorrect commit was already pushed to GitHub, you must **force push**.
+
+```bash
+git push origin main --force
+```
+
+This updates the remote branch to match your local state.
+
+⚠️ Warning  
+Force push rewrites history. Only do this if:
+- You are the only developer
+- Your team agrees
+
+---
+
+# Common Error
+
+## Error
+
+```
+error: src refspec master does not match any
+```
+
+### Cause
+
+Your repository uses **main** instead of **master**.
+
+### Solution
+
+Check your branch name:
+
+```bash
+git branch
+```
+
+Example output:
+
+```
+* main
+```
+
+Push using the correct branch name:
+
+```bash
+git push origin main --force
+```
+
+---
+
+# Verify the Reset
+
+Check commit history again.
+
+```bash
+git log --oneline
+```
+
+Expected output:
+
+```
+ca449fe Commit 1 - Correct version
+```
+
+---
+
+# Useful Git Safety Command
+
+Even after a hard reset, Git keeps a history of HEAD movements.
+
+You can recover lost commits using:
+
+```bash
+git reflog
+```
+
+Example output:
+
+```
+ca449fe HEAD@{0}: reset: moving to ca449fe
+8ab32cd HEAD@{1}: commit: Wrong changes
+```
+
+You can restore the previous commit:
+
+```bash
+git reset --hard 8ab32cd
+```
+
+---
+
+# Quick Summary
+
+### Restore old commit
+
+```bash
+git log --oneline
+git reset --hard <commit-hash>
+git push origin main --force
+```
+
+---
+
+# Best Practice
+
+Before resetting, create a backup branch:
+
+```bash
+git branch backup-before-reset
+```
+
+This ensures you never lose work permanently.
+
+---
